@@ -18,6 +18,11 @@ public class Subject {
    public void attach(Observer observer){
       observers.add(observer);		
    }
+   public void remove(Observer observer){
+	      observers.remove(observer);		
+	
+	   }
+   
 
    public void notifyAllObservers(){
       for (Observer observer : observers) {
